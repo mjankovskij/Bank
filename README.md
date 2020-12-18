@@ -1,7 +1,7 @@
 # Bank
 JS, AJAX, PHP, MySQL
 
-Mysql:
+# Mysql:
 bank/components/sql.php
 bank/bank.sql
 
