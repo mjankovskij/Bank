@@ -5,4 +5,4 @@ Mysql:
 bank/components/sql.php
 bank/bank.sql
 
-![plot](./preview.jpg)
+![alt text](./preview.jpg)
