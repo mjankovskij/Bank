@@ -1,0 +1,219 @@
+body {
+    background: rgb(1, 1, 20);
+    margin: 0;
+}
+
+* {
+    color: #cccbcb;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.login {
+    width: 300px;
+    background: rgb(6, 2, 44);
+    padding: 0 10px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 1px solid #2a2a2a;
+    border-radius: 5px;
+}
+
+.login>h1 {
+    text-align: center;
+}
+
+label {
+    line-height: 30px;
+}
+
+.login>form>input {
+    float: right;
+    width: 70%;
+    background: rgb(1, 1, 20);
+    border: 1px solid #2a2a2a;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.login>form>button {
+    width: 100%;
+    background: #190d5f;
+    border: 1px solid #565656;
+    border-radius: 3px;
+    padding: 8px;
+    margin: 15px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.login>form>.error {
+    margin-top: 5px;
+    color: rgb(172, 6, 6);
+    font-size: 14px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #190d5f;
+    line-height: 34px;
+}
+
+header>h1 {
+    font-size: 18px;
+    float: left;
+    line-height: 10px;
+    margin-left: 20px;
+}
+
+header>nav {
+    float: right;
+}
+
+header>nav .link {
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 10px;
+    padding: 0 2px;
+}
+
+header>nav .link.active {
+    border-bottom: solid 2px#cccbcb;
+}
+
+header>nav .link:hover {
+    background: rgb(41, 35, 208);
+}
+
+.container {
+    margin-top: 35px;
+    overflow: hidden;
+}
+
+.row {
+    width: 400%;
+    margin-left: 0px;
+    transition: 0.5s;
+}
+
+.container>.row>.box {
+    width: 25%;
+    height: 95vh;
+    float: left;
+    overflow-y: auto;
+}
+
+.box>.accountsToFill>.saskaita>p.add,
+.box>.accountsToFill>.saskaita>p.close {
+    cursor: pointer;
+}
+
+.box>.saskaita>p {
+    font-weight: bold;
+}
+
+.accountsToFill p {
+    color: #8c8c8c;
+}
+
+.accountsToFill>.saskaita:nth-child(odd) p {
+    background: rgb(1, 2, 20);
+}
+
+.accountsToFill>.saskaita:nth-child(even) p {
+    background: rgb(17, 17, 17);
+}
+
+.accountsToFill>.saskaita:hover p {
+    background: rgb(66, 66, 66);
+    color: #ffffff;
+}
+
+.saskaita {
+    display: grid;
+    margin: 0px 10px;
+    grid-template-columns: 50px 200px 200px auto 150px 30px 30px;
+    height: 40px;
+}
+
+.saskaita p {
+    padding: 10px;
+    border: solid 1px rgb(113, 113, 113);
+}
+
+.box>form {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 120px auto;
+}
+
+.box>form>.label {
+    padding: 5px;
+    line-height: 20px;
+    border: 1px solid #2a2a2a;
+}
+
+.box>form>input {
+    width: 200px;
+    background: rgb(1, 1, 20);
+    border: 1px solid #2a2a2a;
+    border-radius: 2px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.box>form>input:focus {
+    outline: 0;
+    background: rgb(8, 8, 41);
+}
+
+.box>form>button {
+    width: 320px;
+    background: #190d5f;
+    border: 1px solid #565656;
+    border-radius: 3px;
+    padding: 8px;
+    margin: 15px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.login>form>button:hover,
+.box>form>button:hover {
+    background: #280eba;
+}
+
+.box>p {
+    margin-left: 30px;
+    margin-bottom: -20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.callBack {
+    margin-left: 30px;
+    margin-top: -30px;
+    color: green;
+}
+
+.callBack>p.red {
+    color: Red;
+}
